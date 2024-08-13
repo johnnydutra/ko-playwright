@@ -36,7 +36,7 @@ test.skip('Selectors', async ({ page }) => {
   await page.click('//button')
   })
 
-test.describe('My first test suite', () => {
+test.describe.parallel('My first test suite', () => {
   test('Working with inputs @myTag', async ({ page }) => {
     await page.goto('http://zero.webappsecurity.com/index.html')
     await page.click('#signin_button')
@@ -63,7 +63,7 @@ test.describe('My first test suite', () => {
   })
 })
 
-test.describe('Hooks', () => {
+test.describe.parallel('Hooks', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('https://www.example.com')
   })
