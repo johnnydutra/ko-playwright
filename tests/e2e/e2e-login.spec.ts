@@ -1,8 +1,13 @@
 import { test, expect } from '@playwright/test'
+import { LoginPage } from '../../page-objects/LoginPage'
 
 test.describe.parallel('Login / Logout Flow', () => {
+  let loginPage: LoginPage
+
   test.beforeEach(async ({ page }) => {
-    page.goto('http://zero.webappsecurity.com/index.html')
+    loginPage = new LoginPage(page)
+
+    await loginPage.visit()
     await page.click('#signin_button')
   }) 
   
