@@ -1,29 +1,28 @@
 import { test, expect } from '@playwright/test'
+import { HomePage } from '../../page-objects/HomePage'
+import { FeedbackPage } from '../../page-objects/FeedbackPage'
 
 test.describe('Feedback Form', () => {
-  test.beforeEach(async ({ page }) => {
-    await page.goto('http://zero.webappsecurity.com/index.html')
-    await page.click('#feedback')
+  let homePage: HomePage
+  let feedbackPage: FeedbackPage
 
-    await page.fill('#name', 'Some Name')
-    await page.fill('#email', 'email@email.com')
-    await page.fill('#subject', 'Some subject')
-    await page.fill('#comment', 'Some nice comment about the application')
+  test.beforeEach(async ({ page }) => {
+    homePage = new HomePage(page)
+    feedbackPage = new FeedbackPage(page)
+
+    await homePage.visit()
+    await homePage.clickOnFeedbackLink()
+
+    await feedbackPage.fillForm('Some Name', 'email@email.com', 'Some subject', 'Some nice comment about the application')
   })
 
   test('Reset feedback form', async ({ page }) => {
-    await page.click('input[name="clear"]')
-
-    const nameInput = await page.locator('#name')
-    const commentInput = await page.locator('#comment')
-
-    await expect(nameInput).toBeEmpty()
-    await expect(commentInput).toBeEmpty()
+    await feedbackPage.resetForm()
+    await feedbackPage.assertReset()
   })
 
   test('Submit feedback form', async ({ page }) => {
-    await page.click('input[type="submit"]')
-
-    await page.waitForSelector('#feedback-title')
+    await feedbackPage.submitForm()
+    await feedbackPage.feedbackFormSent()
   })
 })
