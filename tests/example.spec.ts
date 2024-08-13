@@ -35,7 +35,7 @@ test.skip('Selectors', async ({ page }) => {
   })
 
 test.describe('My first test suite', () => {
-  test('Working with inputs', async ({ page }) => {
+  test('Working with inputs @myTag', async ({ page }) => {
     await page.goto('http://zero.webappsecurity.com/index.html')
     await page.click('#signin_button')
     await page.fill('#user_login', 'some username')
@@ -46,7 +46,7 @@ test.describe('My first test suite', () => {
     await expect(errorMessage).toContainText('Login and/or password are wrong.')
   })
   
-  test('Assertions', async ({ page }) => {
+  test('Assertions @myTag', async ({ page }) => {
     await page.goto('https://www.example.com')
     await expect(page).toHaveURL('https://www.example.com')
     await expect(page).toHaveTitle('Example Domain')
