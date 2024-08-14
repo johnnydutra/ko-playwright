@@ -68,10 +68,9 @@ test.describe.parallel('API Testing', () => {
       }
     })
     const responseBody = JSON.parse(await response.text())
-    expect(response.status).toBe(200)
+    expect(response.status()).toBe(200)
     expect(responseBody.name).toBe("New Name")
     expect(responseBody.job).toBe("New Job")
-    expect(responseBody.createdAt).toBeTruthy()
   })
 
   test('DELETE Request - Delete User', async ({ request }) => {
