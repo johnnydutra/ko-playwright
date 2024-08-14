@@ -1,9 +1,14 @@
 import { test, expect } from '@playwright/test'
+import { getRandomNumber, getRandomString } from '../../utils/data-helpers'
 
 test.describe('Tips & Tricks Section', () => {
   test('TestInfo Object', async ({ page }, testInfo) => {
     await page.goto('https://www.example.com')
     console.log(testInfo)
+    let newNumber = await getRandomNumber()
+    let newString = await getRandomString()
+    console.log(newNumber)
+    console.log(newString)
   })
 
   test('Test Skip Browser', async ({ page, browserName }) => {
@@ -42,7 +47,4 @@ test.describe('Tips & Tricks Section', () => {
     await page2.goto('https://www.example.com')
     await page3.goto('https://www.example.com')
   })
-
-  
-
 })
