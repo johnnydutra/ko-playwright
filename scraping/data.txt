@@ -1,0 +1,102 @@
+[
+ {
+  "user": "microsoft",
+  "repo": "playwright",
+  "url": "https://github.com/microsoft/playwright"
+ },
+ {
+  "user": "checkly",
+  "repo": "headless-recorder",
+  "url": "https://github.com/checkly/headless-recorder"
+ },
+ {
+  "user": "apify",
+  "repo": "crawlee",
+  "url": "https://github.com/apify/crawlee"
+ },
+ {
+  "user": "microsoft",
+  "repo": "playwright-python",
+  "url": "https://github.com/microsoft/playwright-python"
+ },
+ {
+  "user": "browserless",
+  "repo": "browserless",
+  "url": "https://github.com/browserless/browserless"
+ },
+ {
+  "user": "artilleryio",
+  "repo": "artillery",
+  "url": "https://github.com/artilleryio/artillery"
+ },
+ {
+  "user": "Skyvern-AI",
+  "repo": "skyvern",
+  "url": "https://github.com/Skyvern-AI/skyvern"
+ },
+ {
+  "user": "codeceptjs",
+  "repo": "CodeceptJS",
+  "url": "https://github.com/codeceptjs/CodeceptJS"
+ },
+ {
+  "user": "apify",
+  "repo": "crawlee-python",
+  "url": "https://github.com/apify/crawlee-python"
+ },
+ {
+  "user": "qawolf",
+  "repo": "qawolf",
+  "url": "https://github.com/qawolf/qawolf"
+ },
+ {
+  "user": "microsoft",
+  "repo": "dotnet-podcasts",
+  "url": "https://github.com/microsoft/dotnet-podcasts"
+ },
+ {
+  "user": "microsoft",
+  "repo": "playwright-dotnet",
+  "url": "https://github.com/microsoft/playwright-dotnet"
+ },
+ {
+  "user": "vogler",
+  "repo": "free-games-claimer",
+  "url": "https://github.com/vogler/free-games-claimer"
+ },
+ {
+  "user": "mishushakov",
+  "repo": "llm-scraper",
+  "url": "https://github.com/mishushakov/llm-scraper"
+ },
+ {
+  "user": "playwright-community",
+  "repo": "playwright-go",
+  "url": "https://github.com/playwright-community/playwright-go"
+ },
+ {
+  "user": "simonw",
+  "repo": "shot-scraper",
+  "url": "https://github.com/simonw/shot-scraper"
+ },
+ {
+  "user": "TheWebScrapingClub",
+  "repo": "webscraping-from-0-to-hero",
+  "url": "https://github.com/TheWebScrapingClub/webscraping-from-0-to-hero"
+ },
+ {
+  "user": "QIN2DIM",
+  "repo": "hcaptcha-challenger",
+  "url": "https://github.com/QIN2DIM/hcaptcha-challenger"
+ },
+ {
+  "user": "ocsjs",
+  "repo": "ocsjs",
+  "url": "https://github.com/ocsjs/ocsjs"
+ },
+ {
+  "user": "reworkd",
+  "repo": "tarsier",
+  "url": "https://github.com/reworkd/tarsier"
+ }
+]
