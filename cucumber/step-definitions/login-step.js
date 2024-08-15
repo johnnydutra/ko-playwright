@@ -14,3 +14,11 @@ When('I fill the login form with valid credentials', async function () {
 Then('I should see the home page', async function() {
   loginPage.assertUserIsLoggedIn()
 })
+
+defineStep('I wait for 3 seconds', async function() {
+  await loginPage.pause()
+})
+
+defineStep(/^I fill the login form with "([^"]*)" and "([^"]*)"$/, async function (username, password) {
+  await loginPage.submitLoginFormWithParameters(username, password)
+})
